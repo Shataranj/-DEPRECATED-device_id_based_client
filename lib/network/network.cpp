@@ -14,7 +14,7 @@ String Network::ConnectToWiFi()
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
  
-  for(int count=0; count < 10; count++){
+  for(int count=0; count < 30; count++){
     if(isWifiConnected()){
       return "connected";
     }
